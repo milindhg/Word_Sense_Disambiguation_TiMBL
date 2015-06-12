@@ -1,0 +1,32 @@
+1. ) > (
+Dont do this 3. ' delete
+4. Cannot > cant
+5. don't > dont
+6. can't > cant
+7. ain't > aint
+5. separator /
+5. _ > some other special character
+
+_ FW
+
+
+=LEFT(A4, SEARCH($B$1,A4,2)-1)&LEFT(B4, SEARCH($B$1,B4,1)-1)&LEFT(C4, SEARCH($B$1,C4,1)-1)&$E$1&RIGHT(A4,LEN(A4)-SEARCH($B$1,A4,1))&RIGHT(B4,LEN(B4)-SEARCH($B$1,B4,1))&RIGHT(C4,LEN(C4)-SEARCH($B$1,C4,1))
+
+_ _NNP_NNP_NNP
+
+
+=LEFT(A4, SEARCH($B$1,A4,2)-1)&LEFT(B4, SEARCH($B$1,B4,1)-1)&$E$1&RIGHT(A4,LEN(A4)-SEARCH($B$1,A4,2))&RIGHT(B4,LEN(B4)-SEARCH($B$1,B4,2))
+
+_ FWFW
+
+
+sed -i 's/.$/ ./g' myfile1.txt
+
+sed -i 's/)/(/g' MyTrain.txt
+
+sed -i 's/\'//g' MyTrain.txt
+
+sed -i 's/cannot/cant/g' MyTrain.txt
+
+
+sed -i 's/\%//g' myfile1.txt

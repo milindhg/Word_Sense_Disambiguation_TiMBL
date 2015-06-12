@@ -1,0 +1,10 @@
+cat EnglishLS.train-tagged.txt | tr " " "\n" | sort | uniq | grep _NN > allNouns_Train.txt
+cat EnglishLS.train-tagged.txt | tr " " "\n" | sort | uniq | grep _VB > allVerbs_Train.txt
+cat EnglishLS.train-tagged.txt | tr " " "\n" | sort | uniq | grep _JJ > allAdjectives_Train.txt
+cat EnglishLS.train-tagged.txt | tr " " "\n" | sort | uniq | grep _RB > allAdverbs_Train.txt
+
+cat EnglishLS.test-tagged.txt | tr " " "\n" | sort | uniq | grep _NN > allNouns_Test.txt
+cat EnglishLS.test-tagged.txt | tr " " "\n" | sort | uniq | grep _VB > allVerbs_Test.txt
+cat EnglishLS.test-tagged.txt | tr " " "\n" | sort | uniq | grep _JJ > allAdjectives_Test.txt
+cat EnglishLS.test-tagged.txt | tr " " "\n" | sort | uniq | grep _RB > allAdverbs_Test.txt
+
